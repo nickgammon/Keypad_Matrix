@@ -209,7 +209,7 @@ void Keypad_Matrix::scan ()
 
     // handle end of a row
     // default: put row back to high-impedance (input)
-    endRowHandler_ (row);
+    endRowHandler_ (rowPins_ [row]);
     }  // end of for each row
 
   // If anything changed call the handlers.
