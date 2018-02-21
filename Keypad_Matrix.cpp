@@ -173,7 +173,7 @@ void Keypad_Matrix::scan ()
 
   uint8_t keyNumber = 0;          // current key number
   unsigned long now = millis ();  // for debouncing
-  char keyChanged [(totalKeys_ + 7) / CHAR_BIT];  // remember which ones changed
+  char keyChanged [(totalKeys_ + CHAR_BIT - 1) / CHAR_BIT];  // remember which ones changed
   memset (keyChanged, 0, sizeof (keyChanged));    // nothing yet
   bool changed = false;                           // did anything change? Not yet.
 
