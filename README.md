@@ -6,7 +6,7 @@ Example wiring for 4x4 matrix:
 
 ![Keyboard matrix](Keyboard_Matrix1.png)
 
-It supports n-key rollover (multiple keys pressed at once). To handle more than two keys pressed at once diodes are strongly recommend as shown in the above schematic. Without them you will get "ghost" key presses under certain circumstances (with 3 or more keys pressed at once).
+It supports n-key rollover (multiple keys pressed at once). To handle more than two keys pressed at once diodes (eg. 1N4148) are strongly recommend as shown in the above schematic. Without them you will get "ghost" key presses under certain circumstances (with 3 or more keys pressed at once).
 
 
 ### Example of use
